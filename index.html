@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== SEO ===== -->
+  <title>Wail Benarba – Étudiant BTS SIO SISR | Administration systèmes et réseaux</title>
+  <meta name="description" content="Portfolio de Wail Benarba, étudiant en BTS SIO option SISR : administration systèmes et réseaux, environnements Windows et Linux, stage, projets et contact.">
+  <meta name="author" content="Wail Benarba">
+  <meta name="theme-color" content="#0f2138">
+
+  <!-- ===== Open Graph (aperçu lors d'un partage de lien) ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Wail Benarba – Étudiant BTS SIO SISR">
+  <meta property="og:description" content="Administration systèmes et réseaux : compétences, stage, projets et contact.">
+  <!-- ✏️ À COMPLÉTER après publication : remplacez VOTRE-PSEUDO et VOTRE-DEPOT, puis retirez les balises de commentaire.
+  <meta property="og:url" content="https://VOTRE-PSEUDO.github.io/VOTRE-DEPOT/">
+  <meta property="og:image" content="https://VOTRE-PSEUDO.github.io/VOTRE-DEPOT/assets/og-image.png">
+  -->
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+   <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- =====================================================
+       EN-TÊTE / NAVIGATION
+       ===================================================== -->
+  <header class="site-header dark">
+    <div class="container site-header__inner">
+      <a class="brand" href="#accueil" aria-label="Wail Benarba – retour à l'accueil">
+        <span class="brand__mark" aria-hidden="true">WB</span>
+        <span class="brand__name">Wail Benarba</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- =====================================================
+         1. HERO / ACCUEIL
+         ===================================================== -->
+    <section id="accueil" class="hero dark" aria-labelledby="hero-titre">
+      <div class="container hero__grid">
+
+        <div class="hero__text">
+          <h1 id="hero-titre">Wail Benarba</h1>
+          <p class="hero__role">Étudiant BTS SIO – SISR</p>
+          <p class="hero__lead">
+            Je m'intéresse à l'administration systèmes, aux réseaux et aux infrastructures
+            informatiques, et je cherche à mettre en pratique ma formation sur des missions concrètes.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#apropos">Découvrir mon profil</a>
+            <a class="btn btn--ghost" href="#contact">Me contacter</a>
+          </div>
+        </div>
+
+        <!-- Schéma réseau : la photo est le nœud central, relié aux domaines d'intérêt.
+             Les 4 pastilles sont des liens vers les sections correspondantes. -->
+        <div class="topo">
+          <svg class="topo__lines" viewBox="0 0 480 480" aria-hidden="true" focusable="false">
+            <circle class="topo__ring" cx="240" cy="240" r="150"/>
+            <circle class="topo__ring topo__ring--outer" cx="240" cy="240" r="215"/>
+            <path class="topo__line" d="M240 240 L72 86"/>
+            <path class="topo__line" d="M240 240 L410 78"/>
+            <path class="topo__line" d="M240 240 L414 388"/>
+            <path class="topo__line" d="M240 240 L62 394"/>
+          </svg>
+
+          <!-- ✏️ PHOTO DE PROFIL
+               1. Placez votre photo dans le dossier assets/ (ex : assets/photo.jpg, format carré conseillé).
+               2. Remplacez la ligne <div class="topo__placeholder"> ... </div> ci-dessous par :
+                  <img src="assets/photo.jpg" alt="Portrait de Wail Benarba" width="240" height="240"> -->
+          <div class="topo__hub">
+            <div class="topo__placeholder" role="img" aria-label="Emplacement réservé pour la photo de profil de Wail Benarba">WB</div>
+          </div>
+
+          <a class="topo__node" href="#competences" style="left:15%;top:18%">Systèmes</a>
+          <a class="topo__node" href="#competences" style="left:85.5%;top:16%">Réseaux</a>
+          <a class="topo__node" href="#projets"     style="left:86%;top:81%">Hébergement</a>
+          <a class="topo__node" href="#experience"  style="left:13%;top:82%">Support</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         2. À PROPOS
+         ===================================================== -->
+    <section id="apropos" class="section" aria-labelledby="apropos-titre">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 id="apropos-titre">À propos</h2>
+        </div>
+
+        <div class="about">
+          <div class="about__text" data-reveal>
+            <p>
+              Je suis étudiant en BTS SIO, option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).
+              Je m'intéresse à l'administration systèmes et réseaux : les environnements Windows et Linux,
+              les infrastructures réseau et les solutions d'hébergement.
+            </p>
+            <p>
+              J'apprends aussi en pratiquant. J'ai effectué un stage d'administrateur réseau chez Apollonia
+              et je monte mes propres services, comme un cloud privé Nextcloud sur un serveur Debian.
+              Je souhaite aujourd'hui progresser sur des missions concrètes, au sein d'une équipe
+              en charge d'infrastructures.
+            </p>
+          </div>
+
+          <!-- Fiche récapitulative : ajoutez ou retirez des lignes <div><dt>…</dt><dd>…</dd></div> -->
+          <dl class="facts" data-reveal>
+            <div><dt>Formation</dt><dd>BTS SIO – Services Informatiques aux Organisations</dd></div>
+            <div><dt>Option</dt><dd>SISR – Solutions d'Infrastructure, Systèmes et Réseaux</dd></div>
+            <div><dt>Centres d'intérêt</dt><dd>Administration systèmes et réseaux, Windows / Linux, hébergement</dd></div>
+            <div><dt>Recherche</dt><dd>Stages, alternance et futurs emplois en administration systèmes et réseaux</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         3. COMPÉTENCES
+         ===================================================== -->
+    <section id="competences" class="section section--tint" aria-labelledby="competences-titre">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 id="competences-titre">Compétences</h2>
+          <p>Les technologies que j'utilise et que je continue d'apprendre.</p>
+        </div>
+
+        <div class="skills" data-reveal>
+
+          <article class="skill">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>
+            <h3>Systèmes</h3>
+            <p class="skill__desc">Environnements de postes et de serveurs.</p>
+            <ul class="skill__list">
+              <li>Windows</li>
+              <li>Windows Server</li>
+              <li>Linux</li>
+            </ul>
+          </article>
+
+          <article class="skill">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11l-6 6M12 11l6 6"/></svg>
+            <h3>Réseaux</h3>
+            <p class="skill__desc">Équipements et services réseau.</p>
+            <ul class="skill__list">
+              <li>Cisco</li>
+              <li>Notions d'administration réseau</li>
+              <li>Configuration et compréhension des services réseau</li>
+            </ul>
+          </article>
+
+          <article class="skill">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 10l3 2-3 2M13 15h4"/></svg>
+            <h3>Administration / Outils</h3>
+            <p class="skill__desc">Scripts, cloud privé et gestion de versions.</p>
+            <ul class="skill__list">
+              <li>PowerShell</li>
+              <li>Nextcloud</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </article>
+
+          <article class="skill">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+            <h3>Web</h3>
+            <p class="skill__desc">Bases pour créer des pages web, comme ce portfolio.</p>
+            <ul class="skill__list">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+
+          <!-- ✏️ Pour ajouter une catégorie : copiez un bloc <article class="skill"> ci-dessus.
+               Niveau descriptif optionnel dans une liste :
+               <li>PowerShell <span class="skill__level">en progression</span></li> -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         4. CERTIFICATIONS
+         ===================================================== -->
+    <section id="certifications" class="section" aria-labelledby="certifications-titre">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 id="certifications-titre">Certifications</h2>
+          <p>Certifications complémentaires à ma formation.</p>
+        </div>
+
+        <div class="certs stagger">
+
+          <!--  CERTIFICATION 1 -->
+          <article class="cert" data-reveal>
+            <svg class="icon icon--badge" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 21l5-3 5 3-1.5-7.5"/></svg>
+            <h3>Introduction à la Cybersécurité</h3>
+            <dl class="cert__meta">
+              <div><dt>Organisme</dt><dd><span class="placeholder">Lycée René Cassin</span></dd></div>
+              <div><dt>Date</dt><dd class="mono"><span class="placeholder">18 Janvier 2026</span></dd></div>
+            </dl>
+            <!-- Quand vous avez le lien : remplacez href="#", puis supprimez class "is-disabled", aria-disabled et tabindex -->
+            <a class="text-link" href="https://www.credly.com/badges/f4bac3c1-0e9a-4dee-80c5-ec8c09f62dca/public_url" target="_blank" >Voir le certificat</a>
+          </article>
+
+          <!--  CERTIFICATION 2 -->
+          <article class="cert" data-reveal>
+            <svg class="icon icon--badge" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 21l5-3 5 3-1.5-7.5"/></svg>
+            <h3>Les bases du matériel informatique</h3>
+            <dl class="cert__meta">
+              <div><dt>Organisme</dt><dd><span class="placeholder">Lycée René Cassin</span></dd></div>
+              <div><dt>Date</dt><dd class="mono"><span class="placeholder">20 Novembre 2026</span></dd></div>
+            </dl>
+            <a class="text-link" href="https://www.credly.com/badges/e8e6b7e3-3d57-4f2a-85d9-6f475c222262/public_url" target="_blank" >Voir le certificat</a>
+          </article>
+
+          <!--  CERTIFICATION 3 -->
+          <article class="cert" data-reveal>
+            <svg class="icon icon--badge" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 21l5-3 5 3-1.5-7.5"/></svg>
+            <h3>Introduction à l'IA moderne</h3>
+            <dl class="cert__meta">
+              <div><dt>Organisme</dt><dd><span class="placeholder">Lycée René Cassin</span></dd></div>
+              <div><dt>Date</dt><dd class="mono"><span class="placeholder">07  Mai 2026</span></dd></div>
+            </dl>
+            <a class="text-link " href="https://www.credly.com/badges/a2dbe1fa-8f3a-4163-ba0f-602280250919/public_url" target="_blank" >Voir le certificat</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         5. FORMATION
+         ===================================================== -->
+    <section id="formation" class="section section--tint" aria-labelledby="formation-titre">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 id="formation-titre">Formation</h2>
+          <p>Un cursus orienté vers l'administration des systèmes, des réseaux et des infrastructures.</p>
+        </div>
+
+        <div class="formation">
+
+          <div class="degree dark" data-reveal>
+            <h3>BTS SIO</h3>
+            <p class="degree__full">Services Informatiques aux Organisations</p>
+            <p class="degree__option">
+              <span class="degree__badge">Option SISR</span>
+              Solutions d'Infrastructure, Systèmes et Réseaux
+            </p>
+            <dl class="degree__meta">
+              <div><dt>Établissement</dt><dd><span class="placeholder">Lycée René Cassin</span></dd></div>
+              <div><dt>Période</dt><dd class="mono"><span class="placeholder">2025-2027</span></dd></div>
+            </dl>
+          </div>
+
+          <!-- ligne <li> par domaine -->
+          <div data-reveal>
+            <h3 class="formation__subtitle">Domaines étudiés</h3>
+            <ul class="domains">
+              <li>
+                <strong>Systèmes Windows et Linux</strong>
+                <span>Installation et administration de postes et de serveurs.</span>
+              </li>
+              <li>
+                <strong>Réseaux et services réseau</strong>
+                <span>Configuration et compréhension des réseaux et de leurs services.</span>
+              </li>
+              <li>
+                <strong>Infrastructures et hébergement</strong>
+                <span>Serveurs et solutions d'hébergement.</span>
+              </li>
+              <li>
+                <strong>Sécurité</strong>
+                <span>Sensibilisation à la cybersécurité et aux bonnes pratiques.</span>
+              </li>
+              <li>
+                <strong>Support et maintenance</strong>
+                <span>Maintenance de postes, dépannage et assistance.</span>
+              </li>
+              <li>
+                <strong>Scripts et outils d'administration</strong>
+                <span>Automatisation de tâches, notamment avec PowerShell.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         6. STAGE copie tout le bloc <article class="xp">. pour ajouter un stage
+         ===================================================== -->
+    <section id="experience" class="section" aria-labelledby="experience-titre">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 id="experience-titre">Expérience</h2>
+          <p>Stage effectué entre juin et juillet 2026.</p>
+        </div>
+
+        <article class="xp" data-reveal>
+          <header class="xp__head">
+            <div>
+              <h3>Apollonia</h3>
+              <p class="xp__role">Stage – Administrateur réseau</p>
+            </div>
+            <p class="xp__dates mono">
+              <time datetime="2026-06-01">01/06/2026</time> – <time datetime="2026-07-03">03/07/2026</time>
+            </p>
+          </header>
+
+          <div class="xp__body">
+            <section class="xp__group" aria-labelledby="xp-postes">
+              <h4 id="xp-postes">Postes et support</h4>
+              <ul>
+                <li>Participation à l'optimisation et à la maintenance de postes informatiques</li>
+                <li>Déployement d'un gestionnaire de mots de passe sécurisé</li>
+                <li>Réutilisation de matériel informatique</li>
+              </ul>
+            </section>
+
+            <section class="xp__group" aria-labelledby="xp-reseau">
+              <h4 id="xp-reseau">Réseau et serveurs</h4>
+              <ul>
+                <li>Intervention sur des équipements et services réseau</li>
+                <li>Travail autour des serveurs et de leurs ports</li>
+                <li>Nettoyage et maintenance de serveurs</li>
+              </ul>
+            </section>
+
+            <section class="xp__group" aria-labelledby="xp-messagerie">
+              <h4 id="xp-messagerie">Messagerie et sécurité</h4>
+              <ul>
+                <li>Intervention sur un problème de messagerie lié à la configuration du domaine, aux enregistrements MX et au SMTP</li>
+                <li>Configuration et sécurisation des ports d’accès NAS </li>
+                <li>Sensibilisation au phishing</li>
+              </ul>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         7. PROJETS
+         ===================================================== -->
+    <section id="projets" class="section section--tint" aria-labelledby="projets-titre">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 id="projets-titre">Projets</h2>
+          <p>Projets personnels menés pour mettre en pratique l'administration de serveurs et de services.</p>
+        </div>
+
+        <div class="projects">
+
+          <!-- PROJET PRINCIPAL -->
+          <article class="project project--featured" data-reveal>
+            <div class="project__content">
+              <p class="project__type">Projet personnel</p>
+              <h3>Mise en place d'un serveur personnel / cloud privé</h3>
+              <p>
+                Installation d'un serveur sous Debian hébergeant mon propre cloud Nextcloud,
+                déployé avec Docker et utilisant le stockage local du serveur.
+              </p>
+              <ul class="tags" aria-label="Technologies utilisées">
+                <li>Debian</li><li>Docker</li><li>Nextcloud</li>
+              </ul>
+              <ul class="project__points">
+                <li>Serveur Debian et administration au quotidien</li>
+                <li>Déploiement de Nextcloud avec Docker</li>
+                <li>Stockage local des données</li>
+                <li>Accès au cloud et gestion des services</li>
+              </ul>
+             
+            </div>
+
+            <!-- Schéma simplifié de l'architecture (de l'utilisateur vers le stockage) -->
+            <ol class="stack" aria-label="Schéma simplifié : accès au cloud, Nextcloud, Docker, serveur Debian, stockage local">
+              <li><span>Accès au cloud</span></li>
+              <li><span>Nextcloud</span></li>
+              <li><span>Docker</span></li>
+              <li><span>Serveur Debian</span></li>
+              <li><span>Stockage local</span></li>
+            </ol>
+          </article>
+
+          <!-- PROJET SECONDAIRE -->
+          <article class="project" data-reveal>
+            <div class="project__content">
+              <p class="project__type">Projet personnel</p>
+              <h3>Serveur Minecraft personnel</h3>
+              <p>
+                Petit projet d'administration système à titre personnel : héberger un serveur de jeu
+                pour m'exercer à installer, configurer et maintenir un service.
+              </p>
+              <ul class="tags" aria-label="Nature du projet">
+                <li>Serveur de jeu</li><li>Administration système</li>
+              </ul>
+              <ul class="project__points">
+                <li>Installation et configuration du serveur</li>
+                <li>Gestion du serveur</li>
+                <li>Configuration réseau</li>
+                <li>Maintenance</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- EMPLACEMENT POUR LES FUTURS PROJETS  -->
+          <article class="project project--next" data-reveal>
+            <div class="project__content">
+              <h3>Prochains projets</h3>
+              <p>Cette section évoluera au fil de ma formation et de mes expérimentations.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section id="contact" class="contact dark" aria-labelledby="contact-titre">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <h2 id="contact-titre">Contact</h2>
+        <p>Je suis disponible pour échanger sur un stage, une alternance ou une opportunité en administration systèmes et réseaux.</p>
+      </div>
+
+      <ul class="contact__list" data-reveal>
+        <li class="contact__item">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <div class="contact__info">
+            <span class="contact__label">Email</span>
+            <a id="email-address" href="mailto:wailbenarba31@gmail.com">wailbenarba31@gmail.com</a>
+          </div>
+          <button class="btn btn--small btn--ghost" type="button" data-copy="#email-address">Copier</button>
+       </li>
+
+        <li class="contact__item">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13c0-1.5 1-2 2-2s2 .8 2 2v3"/></svg>
+          <div class="contact__info">
+            <span class="contact__label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/wail-benarba-094456384/" target="_blank" rel="noopener noreferrer">MA PAGE LINKEDIN</a>
+          </div>
+        </li>
+      </ul>
+      <p class="visually-hidden" role="status" aria-live="polite" id="copy-status"></p>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       9. FOOTER
+       ===================================================== -->
+  <footer class="site-footer dark">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="site-footer__name">Wail Benarba</p>
+        <p class="site-footer__sub">BTS SIO SISR</p>
+      </div>
+      <p class="site-footer__copy">© 2026 Wail Benarba</p>
+      <a class="site-footer__top" href="#accueil">Retour en haut</a>
+    </div>
+  </footer>
+
+</body>
+</html>
